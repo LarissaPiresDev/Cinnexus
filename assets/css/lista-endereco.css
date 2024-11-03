@@ -1,0 +1,171 @@
+/*header*/
+@import url('/assets/css/style.css');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/*cabecalho nav*/
+
+.logo img{
+    height: 100px;
+    width: 160px;
+}
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    position:relative; 
+}
+
+body::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/assets/img/listagem-endereco.jpeg);
+    background-size: cover; /* Faz com que a imagem cubra todo o fundo */
+    filter: blur(8px); /* Aplica o efeito de blur */
+    z-index: -1; /* Coloca o pseudo-elemento atrás do conteúdo */
+}
+
+body::after {
+    content: '';
+    position: absolute; /* Posiciona o pseudo-elemento */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(95, 154, 255, 0.461), rgba(19, 52, 74, 0.7)); /* Gradiente com opacidade */
+    z-index: -1; /* Coloca o gradiente acima do blur */
+}
+
+
+/*container*/
+body {
+    display:flow-root;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    position: relative; /* Permite que os pseudo-elementos sejam posicionados em relação ao body */
+}
+
+body::before {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(/assets/img/listagem-endereco.jpeg);
+    background-size: cover; 
+    filter: blur(7px); 
+    z-index: -2; 
+}
+
+body::after {
+    content: '';
+    position: absolute; 
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(88, 117, 168, 0.468), rgba(19, 52, 74, 0.7)); /* Gradiente com opacidade */
+    z-index: -1; /* Fica acima do blur, mas abaixo do contêiner */
+}
+
+.container {
+    margin-top: 15px;
+    margin-bottom: 20px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    height: calc(100vh - 20px); 
+    position: relative; 
+    filter: blur(7px); 
+    z-index: 1; 
+}
+
+
+
+
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 1000px;
+    background-color: rgba(0, 12, 41, 0.459);
+    padding: 20px; /* Cria espaço ao redor da tabela */
+    border-radius: 8px; /* Adiciona bordas arredondadas, se desejado */
+    margin-bottom: 38px;
+}
+
+.section h2{
+    margin-top: 18px;
+    margin-bottom: 18px;
+    color: aliceblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+.table {
+    color: rgb(210, 230, 243);
+    border-collapse: collapse;
+    font-size: 25px;
+    border: 3px solid #ff8f0e9d;
+    padding: 1rem;
+    text-align: center;
+}
+
+.table th, td{
+    color:rgb(210, 230, 243);
+    border-collapse: collapse;
+    font-size: 25px;
+    border: 3px solid #ff8f0e9d;
+    text-align: center;
+    background-color: rgba(0, 12, 41, 0.459);
+}
+.table::before {
+    margin: 0 auto; /* Centraliza horizontalmente */
+    display: table; /* Garante que o elemento é tratado como uma tabela */
+}
+
+.table {
+    width: 100%; /* Ajusta a tabela para usar toda a largura do container */
+    margin: 0 auto 20px auto; /* Margem inferior para espaço embaixo da tabela */
+    color: rgb(210, 230, 243);
+    border-collapse: collapse;
+    font-size: 25px;
+    border: 3px solid #ff8f0e9d;
+    text-align: center;
+}
+
+
+.table{
+    border-collapse: collapse;
+    width: 750px;
+    align-items: center;
+
+
+}
+
+.table tr{
+    border: 3px solid #ff8f0e9d;
+}
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../assets/js/login-usuario.js"></script>
+    <link rel="icon" href="../assets/img/logo-cabecalho.png" type="image/png">
+    <link rel="stylesheet" href="../assets/css/login-usuario.css">
+    <title>Login</title>
+</head>
+<body>
+    <img src="../assets/img/fundo-login.jpeg" alt="" class="fundo">
+    <div class="blur-fundo"></div>
+    <!-- header -->
+    <header>
+        <div class="logo">
+            <a href="/inicio.html">
+                <img src="../assets/img/logo-cinnexus.png" alt="">
+            </a>
+        </div>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+        <nav class="navegacao">
+            <a href="./cadastro-usuario.html">Cadastre-se</a>
+        </nav>
+    </header>
+
+    <!-- body -->
+
+    <section>
+        <div class="login">
+            <div class="slaamigo">
+                <img src="../assets/img/fundo-login.jpeg" alt="" class="cadastro-imagem">
+            </div>
+            <div class="login_body">
+                <div class="login_box">
+                    <h2>Login</h2>
+                    <form>  
+                     <!-- input email -->
+                        <label for="lname" >Email</label>
+                        <input type="email" name="email" id="email"  placeholder="Email"/>  
+
+                    <!-- input senha -->
+                        <label for="lname" >Senha</label>
+                        <input type="password" name="password" id="password"placeholder="Senha"/>
+
+
+                        <div>
+                            <input type="button" class="submit" value="Entrar" onclick="login()">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+</section>
+
+
+</body>
+</html>

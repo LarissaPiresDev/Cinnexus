@@ -1,0 +1,127 @@
+body{
+    background-color:#0a152f ;
+}
+body::before{
+    content:'';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+}
+
+h3{
+    color: #fffdfd;
+    text-align: center;
+}
+
+.logo img{
+    height: 57px;
+    width: 95px;
+}
+
+.cor1{
+    background-color: #0b1822;
+    color: #c14540;
+}
+.d-flex button{
+    color: #c14540;
+    box-shadow: #c14540;
+    border-color: #c14540;
+}
+
+.d-flex button:hover{
+    background-color: #c14540;
+    border-color: #fffdfd;
+}
+
+.d-flex input{
+    background-color: #385a76b1;
+    color: #0a131a;
+    border-color: #0a131a;
+}
+
+.d-flex input:hover{
+    background-color: #273e51b1;
+    color: #ffffff;
+    border-radius: #10202c;
+    border-style: outset;
+}
+
+.d-flex input:active{
+    background-color: #273e51b1;
+    color: #ffffff;
+    border-radius: #10202c;
+}
+
+.endereco-link {
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.endereco-link img, .endereco-link .link-endereco {
+    height: 70%;
+    width: 45%;
+}
+
+.endereco-link .link-endereco {
+    padding: 1rem;
+    background: url('https://media.istockphoto.com/id/1509170124/pt/vetorial/starry-space-night-blue-sky-seamless-pattern.jpg?s=612x612&w=0&k=20&c=y69OK-BpzF-741krSxmGUVsUgv7raPIt6RV8stoHisk=');
+    align-items: center;
+    
+    padding-top: 6rem;
+    display: flex;
+    gap: .5rem;
+
+    flex-direction: column;
+
+}
+
+.endereco-link .link-endereco h2 {
+    
+    color: #ffffff;
+    
+}
+
+
+
+
+.cadastro-endereco-link {
+    text-decoration: none;
+    margin-top: 1rem;
+    background: orangered;
+    color: white;
+    border: 2px solid #4516b3;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: 1rem 4%;
+}
+
+
+h2{
+    color: #fffdfd;
+}
+
+
+.text{
+    background-color: #081016ec;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.text:hover{
+    background-color: #060c11;
+}
+
+.row img:hover{
+    cursor: pointer;
+    transition: transform 0.5 ease;
+    transform: scale(1.2);
+    z-index: 5;
+
+}
