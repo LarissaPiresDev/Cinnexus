@@ -9,7 +9,6 @@
     <title>Cadastro de Endereço</title>
 </head>
 <body>
-    <img src="../assets/img/endereco-fundo.jpeg" alt="" class="fundo">
     <div class="blur-fundo"></div>
     <!-- header -->
     <header>
@@ -22,7 +21,7 @@
         <div id="menu-bar" class="fas fa-bars"></div>
 
         <nav class="navegacao">
-            <a href="./lista-endereco.html">Voltar para os meus endereços</a>
+            <a href="./lista-endereco.html">Voltar</a>
         </nav>
     </header>
 
@@ -32,33 +31,28 @@
         <div class="cadastro">
             <div class="cadastro_body">
                 <div class="cadastro_box">
-                    <h2>Cadastre seu endereço</h2>
+                    <h2>Novo Endereço</h2>
                     <h3>Receba uma box dos seus filmes e séries favoritas</h3>
                     <form>  
                        
                         <label for="lname" >Salvar como</label>
-                        <input type="text" name="" id="title"  placeholder="ex: 'Minha Casa' ">  
+                        <input type="text" name="" id="title"  placeholder="titulo">  
                     
                         <label for="lname" >CEP</label>
-                        <input type="text" name="cep" id="cep" placeholder=" ex: 04538-133">
+                        <input type="text" name="cep" id="cep" placeholder="cep">
 
                         <label for="lname" >Rua</label>
-                        <input type="text" name="address" id="address" placeholder="Informe a rua">
+                        <input type="text" name="address" id="address" placeholder="rua">
 
 
                         <label for="lname" >Número</label>
-                        <input type="text" name="numero" id="number" placeholder="ex: 123">
+                        <input type="text" name="numero" id="number" placeholder="numero">
 
                         <label for="lname" >Complemento</label>
-                        <input type="text" name="complement" id="complement" placeholder="ex: Casa1/Apto 2b">
+                        <input type="text" name="complement" id="complement"  placeholder="complemento">
 
-                        
-
-
-
-        
                         <div>
-                            <input type="button" class="submit" value="Cadastrar Endereço" onclick="endereco()">
+                            <input type="button" class="submit" value="Atualizar" onclick="atualizarEndereco()">
                         </div>
                     </form>
                 </div>
