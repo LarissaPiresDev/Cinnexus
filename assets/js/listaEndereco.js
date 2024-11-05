@@ -68,7 +68,7 @@ async function listaEndereço() {
         function teste123() {
             alert(id)
             localStorage.setItem("ID", id)
-            window.location.href = "./atualizarEndereco.html?id" + id
+            window.location.href = "./editar-endereco.html?id" + id
         
         }
     })

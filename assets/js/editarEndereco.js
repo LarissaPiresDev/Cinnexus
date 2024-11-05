@@ -17,12 +17,11 @@ async function listarID() {
 
 
                 
-                    id.innerHTML += resposta.data[index].id
-                    titulo.innerHTML += resposta.data[index].title
-                    cep1.innerHTML += resposta.data[index].cep
-                    endereco1.innerHTML += resposta.data[index].address
-                    numero.innerHTML += resposta.data[index].number
-                    complemento.innerHTML += resposta.data[index].complement
+                document.getElementById('title').value = resposta.data[index].title;
+                document.getElementById('cep').value = resposta.data[index].cep;
+                document.getElementById('address').value = resposta.data[index].address;
+                document.getElementById('number').value = resposta.data[index].number;
+                document.getElementById('complement').value = resposta.data[index].complement;
                 
             }
         });

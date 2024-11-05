@@ -4,13 +4,14 @@
     margin: 0;
     padding: 0;
 }
-body{
+body {
     margin: 0;
     padding: 0;
     height: fit-content;
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
+    position:relative; 
 }
 
 .logo img{
@@ -66,8 +67,6 @@ img {
     object-position: center;
     border-radius: 3% 0 0 3%;
     filter: brightness(80%);
-
-
 }
 
 .cadastro {
@@ -89,6 +88,8 @@ img {
     border-radius: 0 3% 3% 0;
     box-sizing: border-box;
     float: left;
+    margin-bottom: auto;
+    margin-top: auto;
     
 }
 .slaamigo {
@@ -158,94 +159,6 @@ label {
 label {
     color: #ffffff;
 
-}
-
-/*suporte*/
-.support {
-    display: flex;
-    color: #b3b3b3;
-    justify-content:space-between ;
-    font-size: 12px;
-    margin-bottom: 5px;
-}
-
-.support input{
-    width: 15px;
-    height: 15px;
-}
-
-.remember {
-    display: flex;
-    align-items: center;
-}
-
-.remember span {
-    margin-right: 5px;
-    height: 25px;
-}
-
-.help a {
-    text-decoration: none;
-    color: #737373;
-}
-.help a:hover{
-    text-decoration: underline;
-}
-
-.login_facebook {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    color: #737373;
-}
-
-.login_facebook span {
-    margin-right: 5px;
-    font-size: 13px;
-}
-
-.login_facebook span a {
-    text-decoration: none;
-    color: #737373;
-}
-.login_facebook a:hover {
-    text-decoration: underline;
-}
-
-.sign_up {
-    color: #737373;
-    font-size: 16px;
-}
-
-.sign_up a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 16px;
-}
-.sign_up a:hover {
-    text-decoration: underline;
-}
-
-/*termos*/
-.saiba_mais{
-    text-decoration: none;
-    color: #0071eb;
-}
-.saiba_mais a:hover {
-    text-decoration: underline;
-}
-
-.box{
-    height: 20px;
-    width: 20px;
-}
-
-.termos {
-    display: flex;
-    align-items: center;
-}
-#terms {
-    width: 20px;
 }
 
 
