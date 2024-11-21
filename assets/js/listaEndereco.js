@@ -1,18 +1,17 @@
 let url = 'https://go-wash-api.onrender.com/api/auth/address';
 
-async function listaEndereço() {
+async function listaEndereco() {
 
     let token = JSON.parse(localStorage.getItem("user")).access_token
     let api = await fetch(url, {
         method: "GET",
         headers: {
-            'Authorization': 'bearer ' + token
+            'Authorization': 'Bearer ' + token
         }
     })
 
     var resposta = await api.json()
     console.log(resposta.data)
-
 
     resposta.data.forEach((endereco) => {
 
@@ -28,11 +27,13 @@ async function listaEndereço() {
         var colunaNumber = document.createElement("td")
         var colunaComplement = document.createElement("td")
         var colunaAtualizar = document.createElement("td")
+        var colunaDeletar = document.createElement("td")
         var botaoAtualizar = document.createElement("button")
-        var colunaExcluir = document.createElement("td")
-        var botaoExcluir = document.createElement("button")
+        var botaoDeletar = document.createElement("button")
         botaoAtualizar.onclick = teste123
-        botaoExcluir.onclick = teste123
+        botaoDeletar.onclick = deletar
+        botaoAtualizar.classList = 'butao'
+        botaoDeletar.classList = 'butao'
         var id = endereco.id
 
 
@@ -43,8 +44,8 @@ async function listaEndereço() {
         var textoAddress = document.createTextNode(endereco.address)
         var textoNumber = document.createTextNode(endereco.number)
         var textoComplement = document.createTextNode(endereco.complement)
-        var textoAtualizar = document.createTextNode("Editar")
-        var textoExcluir = document.createTextNode("Excluir")
+        var textoAtualizar = document.createTextNode("Atualizar")
+        var textoDeletar= document.createTextNode("Deletar")
 
 
         colunaID.appendChild(textoID)
@@ -54,8 +55,9 @@ async function listaEndereço() {
         colunaNumber.appendChild(textoNumber)
         colunaComplement.appendChild(textoComplement)
         botaoAtualizar.appendChild(textoAtualizar)
+        botaoDeletar.appendChild(textoDeletar)
         colunaAtualizar.appendChild(botaoAtualizar)
-        colunaExcluir.appendChild(botaoExcluir)
+        colunaDeletar.appendChild(botaoDeletar)
 
 
         linha.appendChild(colunaID)
@@ -65,7 +67,7 @@ async function listaEndereço() {
         linha.appendChild(colunaNumber)
         linha.appendChild(colunaComplement)
         linha.appendChild(colunaAtualizar)
-        colunaExcluir.appendChild(botaoExcluir)
+        linha.appendChild(colunaDeletar)
 
 
         tbody.appendChild(linha)
@@ -74,12 +76,31 @@ async function listaEndereço() {
         function teste123() {
             alert(id)
             localStorage.setItem("ID", id)
-            window.location.href = "./editar-endereco.html?id" + id
+            window.location.href = "./atualizarEndereco.html?id=" + id
         
+        }
+
+         function deletar() {
+            let urlDeletar = `https://go-wash-api.onrender.com/api/auth/address/${id}`
+            let apiDeletar =  fetch(urlDeletar, {
+                method: "DELETE",
+                headers: {
+                    'Authorization': 'Bearer ' + token
+                    
+                }
+                
+            }) 
+                        
+                alert(`Endereço ${id} deletado com sucesso :)`)
+             
+                
+            
+            location.reload()
+           
         }
     })
 }
 
 
 
-listaEndereço()
+listaEndereco()
