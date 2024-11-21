@@ -12,6 +12,12 @@ body::before{
     
 }
 
+.nave{
+    width: 100%;
+    align-content: space-between;
+}
+
+
 h3{
     color: #fffdfd;
     text-align: center;
@@ -20,6 +26,19 @@ h3{
 .logo img{
     height: 57px;
     width: 95px;
+}
+
+#logoutButton{
+    background-color:#b51a15f4 ;
+    color: #fffdfd;
+    border-radius: none;
+    border-color: transparent;
+    border-radius: 10px;
+    margin-right: 15px;
+    margin-left: auto;
+}
+#logoutButton:hover{
+    background-color: #d0221c;
 }
 
 .cor1{
