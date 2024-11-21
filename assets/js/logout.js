@@ -17,7 +17,7 @@ async function logOut(event) {
         if(sair.ok) {
         localStorage.removeItem("user");
         alert('Logout realizado com sucesso, retornando a página inicial')
-        window.location.href = './index.html'; 
+        window.location.href = '../index.html'; 
       };
 
     };
