@@ -32,7 +32,7 @@ async function login(){
             let resposta = await api.json();
             localStorage.setItem("user", JSON.stringify(resposta))
             console.log(resposta)
-            window.location.href = "/view/home.html"
+            window.location.href = "../view/home.html"
               return
         } else {
             let respostaErro = await api.json();

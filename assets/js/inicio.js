@@ -49,7 +49,7 @@ async function showMovieData() {
             );
         });
 
-        scrollPerClick = 400; // Ajuste conforme necessário
+        scrollPerClick = 400; 
     } catch (error) {
         console.error("Erro ao buscar dados dos filmes:", error);
     }

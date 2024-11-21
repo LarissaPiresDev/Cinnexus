@@ -29,7 +29,10 @@ async function listaEndereço() {
         var colunaComplement = document.createElement("td")
         var colunaAtualizar = document.createElement("td")
         var botaoAtualizar = document.createElement("button")
+        var colunaExcluir = document.createElement("td")
+        var botaoExcluir = document.createElement("button")
         botaoAtualizar.onclick = teste123
+        botaoExcluir.onclick = teste123
         var id = endereco.id
 
 
@@ -41,6 +44,7 @@ async function listaEndereço() {
         var textoNumber = document.createTextNode(endereco.number)
         var textoComplement = document.createTextNode(endereco.complement)
         var textoAtualizar = document.createTextNode("Editar")
+        var textoExcluir = document.createTextNode("Excluir")
 
 
         colunaID.appendChild(textoID)
@@ -51,6 +55,7 @@ async function listaEndereço() {
         colunaComplement.appendChild(textoComplement)
         botaoAtualizar.appendChild(textoAtualizar)
         colunaAtualizar.appendChild(botaoAtualizar)
+        colunaExcluir.appendChild(botaoExcluir)
 
 
         linha.appendChild(colunaID)
@@ -60,6 +65,7 @@ async function listaEndereço() {
         linha.appendChild(colunaNumber)
         linha.appendChild(colunaComplement)
         linha.appendChild(colunaAtualizar)
+        colunaExcluir.appendChild(botaoExcluir)
 
 
         tbody.appendChild(linha)
