@@ -1,5 +1,5 @@
 /*header*/
-@import url('/assets/css/style.css');
+@import url('./style.css');
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +19,7 @@ body::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(/assets/img/listagem-endereco.jpeg);
+    background-image: url(../img/listagem-endereco.jpeg);
     background-size: cover; 
     filter: blur(7px); 
     z-index: -2; 

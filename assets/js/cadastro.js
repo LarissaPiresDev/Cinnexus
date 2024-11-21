@@ -53,7 +53,7 @@ async function cadastro(){
     if(api.ok){
         let resposta = await api.json();
         alert(" Olá " + name + "! Seu cadastro foi efetuado com Sucesso!!!! Retornando à página principal")
-        window.location.href="/view/home.html"
+        window.location.href="../view/home.html"
         return
     }
 

@@ -1,5 +1,5 @@
 /*header*/
-@import url('/assets/css/style.css');
+@import url('../css/style.css');
 *{
     margin: 0;
     padding: 0;
@@ -135,6 +135,17 @@ label {
 .input_box {
     margin-bottom: 25px;
 }
+
+.termos .checkbox{
+    width: 15px;
+}
+
+.termos{
+    display: flex;
+    font-size: 12px;
+    
+}
+
 
 
 

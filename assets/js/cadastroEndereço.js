@@ -29,7 +29,7 @@ async function endereco(){
     });
 
     if (api.ok) {
-        window.location.href = "/view/home.html";
+        window.location.href = "../Cinnexus/view/home.html";
     } else {
         let respostaErro = await api.json();
         alert(respostaErro.data.errors);
