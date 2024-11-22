@@ -19,7 +19,7 @@ body::before{
 }
 
 .navbar {
-    background:  #091d2ed1; 
+    background:  #267bc57b; 
     padding: 8px 40px;
     display: flex;
     justify-content: space-between;
@@ -108,17 +108,15 @@ h3{
     width: 45%;
 }
 
+
 .endereco-link .link-endereco {
     padding: 1rem;
     background: url('https://media.istockphoto.com/id/1509170124/pt/vetorial/starry-space-night-blue-sky-seamless-pattern.jpg?s=612x612&w=0&k=20&c=y69OK-BpzF-741krSxmGUVsUgv7raPIt6RV8stoHisk=');
     align-items: center;
-    
     padding-top: 6rem;
     display: flex;
     gap: .5rem;
-
     flex-direction: column;
-
 }
 
 .endereco-link .link-endereco h2 {
